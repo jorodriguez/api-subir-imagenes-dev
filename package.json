@@ -1,0 +1,11 @@
+{
+  "name": "api-subir-imagenes",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "4.x",
+    "cloudinary": ""
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
