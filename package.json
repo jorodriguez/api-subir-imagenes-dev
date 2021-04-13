@@ -1,9 +1,19 @@
 {
   "name": "api-subir-imagenes",
   "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "local": "heroku local -e .env.local",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix"
+  },
   "dependencies": {
+    "cloudinary": "",
+    "dotenv": "^8.2.0",
     "express": "4.x",
-    "cloudinary": ""
+    "multer": "^1.4.2",
+    "streamifier": "^0.1.1"
   },
   "engines": {
     "node": "12.x"
