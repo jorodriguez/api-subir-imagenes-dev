@@ -4,10 +4,11 @@ const streamifier = require('streamifier');
 
 
 //en caso de usar mas de una cuenta de cloudnary conectar estas credenciasles a una base de datos
+// FIXME: tarea a futuro poder funcionar para mas de 1 cuenta
 cloudinary.config({
-    cloud_name: 'hjxjcdupm',
-    api_key: '126569266916488',
-    api_secret: 'Pka9QCcnwfl-gggM0wKJrOs8KcQ'
+    cloud_name: process.env.CLOUD_NAME || 'hjxjcdupm',
+    api_key: process.env.API_KEY || '126569266916488',
+    api_secret: process.env.SECRET || 'Pka9QCcnwfl-gggM0wKJrOs8KcQ'
 });
 
 const streamUpload = (buffer,folder) => {
